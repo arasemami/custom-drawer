@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text,Button, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 class HomeScreen extends Component {
 
@@ -8,9 +9,9 @@ class HomeScreen extends Component {
 
   }
 
-  static navigationOption = {
+  static navigationOptions = {
     drawerIcon : (
-        <Image  source={require('../assets/img/apple.png')} style={{width:24, height:24}} />
+      <Icon name="rocket" size={30} color="#222"  />
     )
   }
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet } from 'react-native';
-import { DrawerNavigator}  from 'react-navigation';
+import { DrawerNavigator, DrawerItems}  from 'react-navigation';
 
-
+// https://www.youtube.com/watch?v=bJmsmrRtMyw
 
 import HomeScreen from './src/screens/homeScreen';
 import SettingScreen from './src/screens/SettingScreen';
@@ -24,10 +24,7 @@ class App extends Component {
 const customDrawerComponent = (props)  => (
 
   <View style={styles.container}>
-      <Text>Item One</Text>
-      <Text>Item One</Text>
-      <Text>Item One</Text>
-      <Text>Item One</Text>
+   <DrawerItems {...props} />
 
   </View>
 )
@@ -41,7 +38,7 @@ const MyApp = DrawerNavigator({
     screen : SettingScreen
   }
 },{
-  drawerPosition:'right',
+  drawerPosition:'left',
   contentComponent: customDrawerComponent,
   drawerOpenRoute:'DrawerOpen',
 
@@ -53,7 +50,7 @@ const styles = StyleSheet.create({
 
   container:{
     flex:1,
-    backgroundColor:'#333'
+    backgroundColor:'#555'
   }
 })
  
