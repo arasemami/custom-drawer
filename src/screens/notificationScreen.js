@@ -13,14 +13,16 @@ class NotificationScreen extends Component {
   static navigationOptions = {
     drawerIcon : (
       <Icon name="notifications-active" size={24} color="#222"  />
-    )
+    ),
+    title: 'Notification',
+
   }
   
   render() {
     return (
       <View style={{flex:1}}>
             <Header navigation={this.props.navigation} title="Notification"  />
-            
+
             <View style={styles.container}>
                 <Text style={{color:'#888', fontSize:30}}>Notification Screen</Text>
             </View>
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
       flex:1,
       alignItems: 'center',
       justifyContent:'center',
-      backgroundColor:'#333'
+      backgroundColor:'#7DCEA0'
 
   }
 })

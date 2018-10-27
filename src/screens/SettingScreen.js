@@ -13,7 +13,8 @@ export default class SettingScreen extends Component {
   static navigationOptions = {
     drawerIcon : (
       <Icon name="setting" size={24} color="#222"  />
-    )
+    ),
+    title: 'Setting',
   }
 
   render() {

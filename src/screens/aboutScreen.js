@@ -13,14 +13,16 @@ class AboutScreen extends Component {
   static navigationOptions = {
     drawerIcon : (
       <Icon name="information" size={24} color="#222"  />
-    )
+    ),
+    title: 'About us',
+
   }
   
   render() {
     return (
       <View style={{flex:1}}>
             <Header navigation={this.props.navigation} title="About us"  />
-            
+
             <View style={styles.container}>
                 <Text style={{color:'#888', fontSize:30}}>About Screen</Text>
             </View>
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
       flex:1,
       alignItems: 'center',
       justifyContent:'center',
-      backgroundColor:'#333'
+      backgroundColor:'#F4D03F'
 
   }
 })
