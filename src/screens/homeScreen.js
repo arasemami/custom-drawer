@@ -13,7 +13,7 @@ class HomeScreen extends Component {
     drawerIcon : (
       <Icon name="home" size={24} color="#222"  />
     )
-  },
+  }
   
   render() {
     return (

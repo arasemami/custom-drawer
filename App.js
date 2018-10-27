@@ -38,7 +38,7 @@ const MyApp = DrawerNavigator({
     screen : SettingScreen
   }
 },{
-  drawerPosition:'left',
+  drawerPosition:'left',    
   contentComponent: customDrawerComponent,
   drawerOpenRoute: "DrawerOpen",
   drawerCloseRoute: "DrawerClose",
