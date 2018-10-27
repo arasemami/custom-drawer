@@ -3,11 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { DrawerNavigator, DrawerItems}  from 'react-navigation';
 import Icon from 'react-native-vector-icons/dist/Feather';
 
-// https://www.youtube.com/watch?v=bJmsmrRtMyw
-
-// import HomeScreen from './screens/homeScreen';
-// import SettingScreen from './screens/SettingScreen';
-
+ 
 
 class Header extends React.Component {
   constructor(props) {
@@ -25,8 +21,7 @@ class Header extends React.Component {
     return ( 
 
      <View style={styles.container}>
-        {/* <Button title="Menu" onPress = { this.onButtonPress } style={{height:20, width: 10}} /> */}
-
+       
         <View style={styles.titleContainer}>
             <Text style={{color:'#fff', fontSize:16}}>{this.props.title}</Text>
         </View>

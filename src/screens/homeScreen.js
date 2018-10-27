@@ -20,9 +20,10 @@ class HomeScreen extends Component {
     return (
       <View style={{flex:1}}>
           <Header navigation={this.props.navigation} title="Home"  />
+          
           <View style={styles.container}>
             <Text style={{color:'#888', fontSize:30}}>Home Screen</Text>
-        </View>
+          </View>
       </View>
     );
   }

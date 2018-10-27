@@ -19,10 +19,11 @@ class AboutScreen extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-          <Header navigation={this.props.navigation} title="About us"  />
-          <View style={styles.container}>
-            <Text style={{color:'#888', fontSize:30}}>About Screen</Text>
-        </View>
+            <Header navigation={this.props.navigation} title="About us"  />
+            
+            <View style={styles.container}>
+                <Text style={{color:'#888', fontSize:30}}>About Screen</Text>
+            </View>
       </View>
     );
   }

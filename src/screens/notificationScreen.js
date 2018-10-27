@@ -19,10 +19,11 @@ class NotificationScreen extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-          <Header navigation={this.props.navigation} title="Notification"  />
-          <View style={styles.container}>
-            <Text style={{color:'#888', fontSize:30}}>Notification Screen</Text>
-        </View>
+            <Header navigation={this.props.navigation} title="Notification"  />
+            
+            <View style={styles.container}>
+                <Text style={{color:'#888', fontSize:30}}>Notification Screen</Text>
+            </View>
       </View>
     );
   }

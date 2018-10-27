@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, Button } from 'react-native';
 import { DrawerNavigator, DrawerItems}  from 'react-navigation';
 
-// https://www.youtube.com/watch?v=bJmsmrRtMyw
-
 import HomeScreen from './src/screens/homeScreen';
 import SettingScreen from './src/screens/SettingScreen';
 import NotificationScreen from './src/screens/notificationScreen';
@@ -21,9 +19,7 @@ class App extends React.Component {
   render() { 
     return ( 
 
-     
           <MyApp />
-
       
      );
   }

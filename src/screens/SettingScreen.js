@@ -24,8 +24,6 @@ export default class SettingScreen extends Component {
         <View style={styles.container}>
             <Text style={{color:'#888', fontSize:30}}>Setting Screen</Text>
         </View>
-      
-        
       </View>
     );
   }
