@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { View, Text,Button } from 'react-native';
+import { View, Text,Button, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
+import Header from '../header';
 
 export default class SettingScreen extends Component {
 
-  onButtonPress = () => {
-    this.props.navigation.openDrawer();
-
-  }
+    onButtonPress = () => {
+        this.props.navigation.openDrawer();
+    
+      }
 
   static navigationOptions = {
     drawerIcon : (
@@ -17,10 +18,26 @@ export default class SettingScreen extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Setting Screen</Text>
-        <Button title="Menu" onPress = { this.onButtonPress } />
+      <View style={{flex:1}}>
+        <Header navigation={this.props.navigation} title="Setting" />
+
+        <View style={styles.container}>
+            <Text style={{color:'#888', fontSize:30}}>Setting Screen</Text>
+        </View>
+      
+        
       </View>
     );
   }
 }
+
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems: 'center',
+        justifyContent:'center',
+        backgroundColor:'#333'
+
+    }
+})

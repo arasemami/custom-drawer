@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text,Button, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 import Header from '../header';
 
-class HomeScreen extends Component {
+class AboutScreen extends Component {
 
   onButtonPress = () => {
     this.props.navigation.openDrawer();
@@ -12,16 +12,16 @@ class HomeScreen extends Component {
 
   static navigationOptions = {
     drawerIcon : (
-      <Icon name="home" size={24} color="#222"  />
+      <Icon name="information" size={24} color="#222"  />
     )
   }
   
   render() {
     return (
       <View style={{flex:1}}>
-          <Header navigation={this.props.navigation} title="Home"  />
+          <Header navigation={this.props.navigation} title="About us"  />
           <View style={styles.container}>
-            <Text style={{color:'#888', fontSize:30}}>Home Screen</Text>
+            <Text style={{color:'#888', fontSize:30}}>About Screen</Text>
         </View>
       </View>
     );
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
 
 
 
-export default  HomeScreen;
+export default  AboutScreen;
