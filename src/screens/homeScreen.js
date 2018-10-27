@@ -11,9 +11,10 @@ class HomeScreen extends Component {
 
   static navigationOptions = {
     drawerIcon : (
-      <Icon name="rocket" size={30} color="#222"  />
+      <Icon name="home" size={24} color="#222"  />
     )
-  }
+  },
+  
   render() {
     return (
       <View>

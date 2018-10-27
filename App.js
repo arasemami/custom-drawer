@@ -40,7 +40,13 @@ const MyApp = DrawerNavigator({
 },{
   drawerPosition:'left',
   contentComponent: customDrawerComponent,
-  drawerOpenRoute:'DrawerOpen',
+  drawerOpenRoute: "DrawerOpen",
+  drawerCloseRoute: "DrawerClose",
+  drawerToggleRoute: "DrawerToggle",
+  contentOptions: {
+    activeTintColor: 'rgb(234, 94, 32)'
+
+}
 
 
 })
@@ -50,7 +56,7 @@ const styles = StyleSheet.create({
 
   container:{
     flex:1,
-    backgroundColor:'#555'
+    backgroundColor:'#fcfcfc'
   }
 })
  
