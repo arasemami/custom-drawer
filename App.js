@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, Button } from 'react-native';
+import {View, Text, StyleSheet, Button, ImageBackground, Image } from 'react-native';
 import { DrawerNavigator, DrawerItems}  from 'react-navigation';
 
 import HomeScreen from './src/screens/homeScreen';
@@ -28,9 +28,11 @@ class App extends React.Component {
 const customDrawerComponent = (props)  => (
 
   <View style={styles.container}>
-      <View style={styles.imageContainer}>
-
-      </View>
+      <ImageBackground source={require('./src/assets/img/bg.jpg')} style={styles.imageContainer}>
+          <View style={styles.AvatarContainer}>
+            <Image source={require('./src/assets/img/avatar.png')}    style={styles.avatarSize} />
+          </View>
+      </ImageBackground>
       <DrawerItems {...props} />
 
   </View>
@@ -74,6 +76,27 @@ const styles = StyleSheet.create({
   imageContainer:{
     backgroundColor:'#444',
     height: 150,
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+  avatarSize:{
+    
+    height:80,
+    width: 80,
+   
+  },
+  AvatarContainer:{
+    height:110,
+    width: 110,
+    backgroundColor:'#fff',
+    borderRadius:100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding:30,
+    borderWidth:3,
+    borderColor:'#333'
+
   }
 })
  
