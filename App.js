@@ -28,7 +28,10 @@ class App extends React.Component {
 const customDrawerComponent = (props)  => (
 
   <View style={styles.container}>
-   <DrawerItems {...props} />
+      <View style={styles.imageContainer}>
+
+      </View>
+      <DrawerItems {...props} />
 
   </View>
 )
@@ -67,6 +70,10 @@ const styles = StyleSheet.create({
   container:{
     flex:1,
     backgroundColor:'#fcfcfc'
+  },
+  imageContainer:{
+    backgroundColor:'#444',
+    height: 150,
   }
 })
  
