@@ -102,14 +102,18 @@
 
 
 import React, { Component} from 'react';
- import StackHome from './src/navigation/stackNav';
+import StackHome from './src/navigation/stackNav';
+import Drawer from './src/navigation/drawerNav';
+import Tabs from './src/navigation/tabNav';
+import Navi from './src/navigation/mixNavigator';
+import AppNav from './src/navigation/App';
 
 
  export default class App extends Component {
    render (){
 
     return(
-      <StackHome />
+      <AppNav />
     )
    }
  }
