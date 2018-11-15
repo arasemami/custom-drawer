@@ -14,10 +14,17 @@
 //     this.state = {  }
 //   }
 
+<<<<<<< HEAD
 //   render() { 
 //     return ( 
 
 //           <MyApp />
+=======
+  render() { 
+    return ( 
+
+          <MyApp />
+>>>>>>> 8cc8f3bb3a313400c9f09916cf0fbc80899e02f9
       
 //      );
 //   }
